@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Organic food web site</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .mobile,.tablet,.desktop{
+            display:none;
+        }
+        @media screen and (min-width:0px) and (max-width:767px){
+            .mobile{
+                display:block;
+            }
+            nav{
+            position: fixed;
+            }
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%2381C408' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:1023px){
+            .tablet{
+                display:block;
+            }
+            nav{
+            position: fixed;
+            }
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%2381C408' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        
+            }
+        }
+        @media screen and (min-width:1024px) {
+            .desktop{
+                display:block;
+            }
+        }
+
+        .mobile_shop_details_img{
+            width: 50%;
+            height: 400px;
+            /* object-fit: cover; */
+            padding-left:0px;
+        }
+
+         .tablet_content{
+            height:100%;
+            width:75%;
+            /* background-color:blueviolet; */
+            /* padding-top:100px; */
+        }
+        .mobile_content{
+            height:100%;
+            width:75%;
+            margin-top:0px;
+            padding-top:0px;
+        }
+
+        .tablet_shop_orang {
+            /* background-color: rgb(206, 205, 203); */
+            grid-area: b12_orang;
+            display: flex;
+            flex-direction: row;
+            border-radius: 5px;
+            /* padding-left:20px; */
+            gap:40px;
+            height:180px;
+            width:80%;
+            margin:30px;
+
+        }
+
+        .tablet_shop_image {
+            height: 140px;
+            width: 30%;
+            border-radius: 50%;
+            /* background-color: rgb(13, 213, 90); */
+            margin-top: 30px;
+            /* margin-left:20px; */
+        }
+
+        .tablet_circle_img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .mobile_photo_shop {
+            height: 400px;
+            width: 40%;
+            background-color: blue;
+            margin-top: 40px;
+            border-radius: 20px;
+            margin-left:60px;
+        }
+        .mobile_image_shop {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+            /* margin-top: 30/px; */
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="desktop">
+    <center>
+    <nav>
+        <div class="header">
+            <div class="icon"><ion-icon name="location-outline"></ion-icon></div>&nbsp;
+            <a href="" class="a">123 Street New York</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>&nbsp;
+            <a href="" class="a">Email@Example.com</a>
+        </div>
+        <div class="header">
+            <a href="" class="a">Privacy Policy</a> &nbsp;&nbsp;/&nbsp;&nbsp;
+            <a href="" class="a">Terms of Use</a> &nbsp;&nbsp;/&nbsp;&nbsp;
+            <a href="" class="a">Sales and Refunds</a>
+        </div>
+    </nav>
+    </center>
+    <div class="nav2">
+        <div> <span style="color:#81C408;font-size: 60px;">Fruitables</span> </div>
+        <div class="a1">
+                <a href="#main_container" class="a1">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="./shop.html" class="a1">Shop</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="./shop_detail.html" class="a1">Shop Details</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <div class="dropdown">
+                    <a href="#" class="a1">Pages <ion-icon name="chevron-down" style="padding-top:5px;"></ion-icon></a>
+                    <div class="dropdown-content">
+                    <a href="./cart.html">Cart</a>
+                    <a href="./checkout.html">Checkout</a>
+                    <a href="./testimonial.html">Testimonial</a>
+                    <a href="./404_page_not_found.html">404 Page</a>
+                    </div>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <a href="./contact.html" class="a1">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="icons">
+            <div class="search"><ion-icon name="search-circle-outline"></ion-icon></div>&nbsp;&nbsp;&nbsp;
+            <ion-icon name="bag-outline"></ion-icon>&nbsp;&nbsp;&nbsp;
+            <ion-icon name="person-outline"></ion-icon>&nbsp;&nbsp;&nbsp;
+
+        </div>
+    </div>
+    <!-- background_image -->
+    <div class="background_shop">
+        <div style="color:white; font-size: 40px;text-align:center;padding-top:60px">Shop</div>
+        <div style="text-align:center">
+            <a href="" class="shop_anchortag">Home</a>&nbsp;&nbsp;<span style="color: white;">/</span>&nbsp;&nbsp;
+            <a href="" class="shop_anchortag">Pages</a>&nbsp;&nbsp;<span style="color: white;">/</span>&nbsp;&nbsp;
+            <a href="" class="shop_anchortag" style="color:white">Shop Details</a>
+        </div>
+    </div>
+
+    <div class="shop_details">
+        <!-- column1 -->
+         <div class="shop_details1_c1">
+            <div class="blk1">
+                <div class="shop_details_img">
+                    <img class="shop_details_img_det" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/single-item.jpg" alt="Vegetable" style="object-fit: contain;">
+                </div>
+                <div class="content">
+                    <div style=" padding-left:10px;padding-top:30px"><span style="font-size: 39px;padding-top:300px;"><h5>Brocoli</h5></span></div>
+                    <div style="padding-top:10px; padding-left:10px;"><span style="font-size: 20px;"><p>Category: Vegetables</p></span></div>
+                    <div style="padding-top:10px; padding-left:10px;"><span style="font-size: 20px;"><p>3,35 $</p></div>
+                    <div style="padding-top: 10px;font-size: 20px; padding-left:10px;"><span style="color:orange"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></span><ion-icon name="star-outline"></ion-icon></div>
+                    <div style="padding-top:25px;font-size:18px;padding-left: 10px;padding-right: 8px;"><p>The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.</p></div>
+                    <div style="padding-top:30px;font-size:18px;padding-left: 10px;padding-right: 8px;"><p>Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish</p></div>
+                    <button style="margin-top: 20px;margin-left:10px; background-color:greenyellow">Add to Cart</button>
+                </div>
+            </div>
+            <div class="blk2">
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./shop_details_description.html"  target="kalyani" style="font-size: 25px; text-decoration: none;">Description</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="./shop_details_reviews.html" target="kalyani"  style="font-size: 25px; text-decoration: none;">Reviews</a>
+                    
+                </div>
+                <span style="color:black"><hr></span>
+                <div>
+                    <iframe src="./shop_details_description.html" name="kalyani" frameborder="0" class="shop_details_iframe"></iframe>
+                </div>
+            </div>
+
+            <div class="blk3">
+                <span style="font-size: 30px;padding-top: 20px;"><h4>Leave a Reply</h4></span>
+                <div class="inputfield-row" style="padding-top:20px;">
+                    <input type="text" placeholder="Your Name*" style="width: 48%; height: 50px; border-radius: 5px; border: 1px solid greenyellow;">
+                    <input type="text" placeholder="Your Email*" style="width: 48%; height: 50px; border-radius: 5px; border:1px solid greenyellow;">
+                </div>
+                <div style="margin-top:30px">
+                    <textarea placeholder="Your Review*" name="" id="" style="height: 100px; width:100%; border: 1px solid greenyellow;"></textarea>
+                </div>
+                <br>
+                <div class="plate_review">
+                    <div><span style="font-size: 25px;"><p>Please rate:</span><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></p></div>
+                    <div><button style="margin-top: 20px;margin-right: 30px;margin-left:10px; background-color:greenyellow">Post Comment</button></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- column2 -->
+        <!-- <div class="shop_details1_c2"> -->
+        <div class="b1" style="margin-left:40px;">
+            <div style="font-size: 40px;">Categories</div>
+            <div class="shop_c1">
+                <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                        style="text-decoration: none; color: green;">Apples</a></div>
+                <div>(3)</div>
+            </div>
+            <div class="shop_c1">
+                <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                        style="text-decoration: none; color: green;">Orange</a></div>
+                <div>(5)</div>
+            </div>
+            <div class="shop_c1">
+                <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                        style="text-decoration: none; color: green;">Strawbery</a></div>
+                <div>(2)</div>
+            </div>
+            <div class="shop_c1">
+                <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                        style="text-decoration: none; color: green;">Banana</a></div>
+                <div>(8)</div>
+            </div>
+            <div class="shop_c1">
+                <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                        style="text-decoration: none; color: green;">Pumpkin</a></div>
+                <div>(5)</div>
+            </div>
+            <div class="roll">
+                <label for="roll">Price</label><br>
+                <input type="range" id="roll" min="0" max="100" style="width:90%"><br>
+            </div>
+            <div>
+                <div style="font-size: 30px;padding-top:20px;">Featured products</div>
+                <div class="shop_orang">
+                    <div class="shop_image"><img class="circle_img"
+                            src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-1.jpg"
+                            alt=""></div>
+                    <div class="block12_content">
+                        <div class="organic_tomato"><span style="font-size: 18px;">Organic Orange</span></div>
+                        <div class="shop_stars"><span style="color:orange;"><ion-icon name="star"></ion-icon><ion-icon
+                                    name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                    name="star"></ion-icon></span><span style="color:rgb(117, 124, 125)"><ion-icon
+                                    name="star"></span></ion-icon></div>
+                        <div class="cost"><span style="font-size: 20px;">3.12$</span></div>
+                        <button class="btn_blk12" style="color:#81C408; border:2px solid orange"> <ion-icon
+                                name="bag-check"></ion-icon> Add To Cart</button>
+                    </div>
+                </div>
+                <div class="shop_orang">
+                    <div class="shop_image"><img class="circle_img"
+                            src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/featur-1.jpg" alt="">
+                    </div>
+                    <div class="block12_content">
+                        <div class="organic_tomato"><span style="font-size: 18px;">Organic Apples</span></div>
+                        <div class="shop_stars"><span style="color:orange;"><ion-icon name="star"></ion-icon><ion-icon
+                                    name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                    name="star"></ion-icon></span><span style="color:rgb(117, 124, 125)"><ion-icon
+                                    name="star"></span></ion-icon></div>
+                        <div class="cost"><span style="font-size: 20px;">3.12$</span></div>
+                        <button class="btn_blk12" style="color:#81C408; border:2px solid orange"> <ion-icon
+                                name="bag-check"></ion-icon> Add To Cart</button>
+                    </div>
+                </div>
+                <div class="shop_orang">
+                    <div class="shop_image"><img class="circle_img"
+                            src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/featur-2.jpg" alt="">
+                    </div>
+                    <div class="block12_content">
+                        <div class="organic_tomato"><span style="font-size: 18px;">Organic Strawbery</span></div>
+                        <div class="shop_stars"><span style="color:orange;"><ion-icon name="star"></ion-icon><ion-icon
+                                    name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                    name="star"></ion-icon></span><span style="color:rgb(117, 124, 125)"><ion-icon
+                                    name="star"></span></ion-icon></div>
+                        <div class="cost"><span style="font-size: 20px;">3.12$</span></div>
+                        <button class="btn_blk12" style="color:#81C408; border:2px solid orange"> <ion-icon
+                                name="bag-check"></ion-icon> Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <button
+                style="border-radius: 20px;margin-left:10px; width:80%; background-color: #81C408; color: white;margin-top:20px">View
+                more</button>
+            <div class="photo_shop">
+                <img class="image_shop"
+                    src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/banner-fruits.jpg" alt="">
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="block8">
+            <div class="Name"><h3><span style="font-size: 50px;">Fresh Organic Vegetables</span></h3></div>
+            <div style="display: flex; flex-direction: row; padding:30px 15px 10px 10px; gap:10px">
+                <div class="buttons_1"><button class="bn"><ion-icon class="arrow" name="arrow-forward-outline"></ion-icon></button></div>
+                <div class="buttons_1"><button class="bn"><ion-icon class="arrow" name="arrow-back-outline"></ion-icon></button></div>
+            </div>
+        </div>
+
+        <!-- block9 -->
+
+        <div class="block9" style="margin-top:40px;">
+            
+            <div class="apples">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-6.jpg" alt="Apples">
+                </div>
+                <center><div class="heading_apples"><h5> Apple</h5></div></center>
+                <div class="para_apples"><p>Apples are nutritious. Apples may be good for weight loss. Apples may be good for your heart. As part of a healthy diet.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+            <div class="Grapes">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-5.jpg" alt="Grapes">
+                </div>
+                <center><div class="heading_apples"><h5> Grapes</h5></div></center>
+                <div class="para_apples"><p>Grapes are nutritious. Grapes may be good for weight loss. Grapes may be good for your heart. As part of a healthy diet.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+            <div class="Raspberries">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-2.jpg" alt="Raspberries">
+                </div>
+                <center><div class="heading_apples"><h5> Raspberries</h5></div></center>
+                <div class="para_apples"><p>Raspberries are nutritious. Raspberries may be good for weight loss. Raspberries may be good for your heart.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+            <div
+             class="Apricots">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-4.jpg" alt="Apricots">
+                </div>
+                <center><div class="heading_apples"><h5> Apricots</h5></div></center>
+                <div class="para_apples"><p>Apricots are nutritious. Apricots may be good for weight loss. Apricots may be good for your heart. As part of a healthy diet.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+        </div>
+
+        <footer>
+                <div class="ff11">
+                    <a href=""  style="text-decoration: none; color:#36806a;font-size: 45px;">Fruitables</a>
+                    <a href=""  style="color:orange;font-size: 30px;;text-decoration: none"> Fresh products</a>
+                </div>
+                <div class="ff12">
+                    <input class="search1" type="text" placeholder="Your Email" style="height:50px; width:340px; margin-top:30px; margin-left:10px; border-color: orange; border-radius: 40px;">
+                    <input class="btn" type="submit"> </span>
+                </div>
+                <div class="ff13">
+                    <span style="color:orange; font-size: 50px;"><ion-icon name="logo-facebook"></ion-icon></span>
+                    <span style="color:orange; font-size: 50px;"><ion-icon name="logo-twitter"></ion-icon></span>
+                    <span style="color:orange; font-size: 50px;"><ion-icon name="logo-instagram"></ion-icon></span>
+                    <span style="color:orange; font-size: 50px;"><ion-icon name="logo-linkedin"></ion-icon></span>
+                </div>
+                <div class="ff21">
+                    <div style="padding-top:15px;;"><span style="color:white;font-size: 40px; font-family: 'Times New Roman', Times, serif;"><h6>Why People Like us!</h6></span></div>
+                    <div style="padding-top:15px;padding-left: 10px;"><span style="color:rgb(172, 169, 169);font-size: 15px; font-family: Open Sans, sans-serif;"><p style="line-height: 1.8;">typesetting, remaining essentially unchanged. It was popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p></span></div>
+                    <div style="padding-top:15px;padding-left: 10px;" class="buttons_1"><button class="bn">Read More</button></div>
+
+                </div>
+                <div class="ff22">
+                    <div style="padding-top:10px;padding-left: 40px;"><span style="color:white;font-size: 40px; font-family: 'Times New Roman', Times, serif;"><h6>Shop Info</h6></span></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">About us</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Contact us</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Privacy Policy</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Terms & Conditions</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Return Policy</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">FAQs & Help</a></div>
+                </div>
+                <div class="ff23">
+                    <div style="padding-top:10px;padding-left: 40px;"><span style="color:white;font-size: 40px; font-family: 'Times New Roman', Times, serif;"><h6>Account</h6></span></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">My Account</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Shop Details</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Shoping Cart</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Wishlist</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Order History</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">International Orders</a></div>
+                </div>
+                <div class="ff24">
+                    <div style="padding-top:10px;padding-left: 87px;"><span style="color:white;font-size: 40px; font-family: 'Times New Roman', Times, serif;"><h6>Contact</h6></span></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Address: 1429 Netus Rd, NY 48247</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Email: Example@gmail.com</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Phone: +0123 4567 8910</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Payment Accepted</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><img src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/payment.png" alt=""></div>
+                </div>
+                <div class="ff31">
+                    <div style="padding-top:30px;"><a href="" style="text-decoration: none; color:greenyellow;font-size: 25px; font-family: Open Sans, sans-serifpx;">Your_site_name</a> &nbsp;&nbsp; <span style="color:white; font-size: 25px;">All right reserved.</span></div>
+                </div>
+                <div class="ff32">
+                    <div style="padding-top:30px; padding-left:200px"><span style="color:white; font-size: 25px;">Designed By </span>&nbsp;&nbsp;<a href="" style="text-decoration: none; color:greenyellow;font-size: 25px; font-family: Open Sans, sans-serifpx;">Your_site_name</a> </div>
+                </div>
+        </footer>
+    </div>
+
+
+    <div class="tablet">
+        <!-- nav bar -->
+        <nav class="navbar bg-body-tertiary fixed-top" style="height:100px ;background-color: rgb(39, 7, 12);padding-right:20px;padding-left:30px;font-size:40px;" >
+                <div class="container-fluid">
+                    <a class="navbar-brand" style="color:#81C408;font-size:40px;" href="#">Fruitables</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" style="color: #81C408;">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./HTML_CSS_PRO.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shop_detail.html">Shop_Detail</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                            <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
+                            <li><a class="dropdown-item" href="./testimonial.html">Testimonial</a></li>
+                            <li><a class="dropdown-item" href="./404_page_not_found.html">404 pages</a></li>
+                            
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                        </ul>
+                        
+                    </div>
+                    </div>
+                </div>
+        </nav>
+        <!-- background_image -->
+        <div class="background_shop" style="margin-top:100px;">
+            <div style="color:white; font-size: 40px;text-align:center;padding-top:60px">Shop</div>
+            <div style="text-align:center">
+                <a href="" class="shop_anchortag">Home</a>&nbsp;&nbsp;<span style="color: white;">/</span>&nbsp;&nbsp;
+                <a href="" class="shop_anchortag">Pages</a>&nbsp;&nbsp;<span style="color: white;">/</span>&nbsp;&nbsp;
+                <a href="" class="shop_anchortag" style="color:white">Shop</a>
+            </div>
+        </div>
+
+        <div class="shop_details_img" style="margin:40px; margin-left:200px;">
+            <img class="shop_details_img_det" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/single-item.jpg" alt="Vegetable" style="object-fit: contain;">
+        </div>
+
+        <div class="tablet_content" style="margin-left:40px;margin-right:0px;">
+            <div style=" padding-left:10px;padding-top:30px"><span style="font-size: 45px;padding-top:300px;"><h5 style="font-size: 45px;">Brocoli</h5></span></div>
+            <div style="padding-top:10px; padding-left:10px;"><span style="font-size: 20px;"><p>Category: Vegetables</p></span></div>
+            <div style="padding-top:10px; padding-left:10px;"><span style="font-size: 30px;"><p>3,35 $</p></div>
+            <div style="padding-top: 10px;font-size: 20px; padding-left:10px;"><span style="color:orange"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></span><ion-icon name="star-outline"></ion-icon></div>
+            <div style="padding-top:25px;font-size:18px;padding-left: 10px;"><p>The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.</p></div>
+            <div style="padding-top:10px;font-size:18px;padding-left: 10px;"><p>Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish</p></div>
+            <button style="margin-top: 20px;margin-left:10px; background-color:greenyellow">Add to Cart</button>
+        </div>
+
+        <div class="blk2">
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./shop_details_description.html"  target="kalyanii" style="font-size: 25px; text-decoration: none;">Description</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="./shop_details_reviews.html" target="kalyanii"  style="font-size: 25px; text-decoration: none;">Reviews</a>
+                    
+                </div>
+                <span style="color:black"><hr></span>
+                <div>
+                    <iframe src="./shop_details_description.html" name="kalyanii" frameborder="0" class="shop_details_iframe"></iframe>
+                </div>
+        </div>
+
+        <div class="blk3" style="padding-left:20px;">
+                <span style="font-size: 30px;padding-top: 20px;"><h4>Leave a Reply</h4></span>
+                <div class="inputfield-row" style="padding-top:20px;">
+                    <input type="text" placeholder="Your Name*" style="width: 45%; height: 50px; border-radius: 5px; border: 1px solid greenyellow;">
+                    <input type="text" placeholder="Your Email*" style="width: 45%; height: 50px; border-radius: 5px; border:1px solid greenyellow;">
+                </div>
+                <div style="margin-top:30px">
+                    <textarea placeholder="Your Review*" name="" id="" style="height: 100px; width:90%; border: 1px solid greenyellow;"></textarea>
+                </div>
+                <br>
+                <div class="plate_review">
+                    <div><span style="font-size: 25px;"><p>Please rate:</span><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></p></div>
+                    <div><button style="margin-top: 20px;margin-right: 30px;margin-left:10px; background-color:greenyellow">Post Comment</button></div>
+                </div>
+        </div>
+
+        <div class="tablet_b1">
+                <div style="font-size: 40px;">Categories</div>
+                <div class="shop_c1">
+                    <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                            style="text-decoration: none; color: green;">Apples</a></div>
+                    <div>(3)</div>
+                </div>
+                <div class="shop_c1">
+                    <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                            style="text-decoration: none; color: green;">Orange</a></div>
+                    <div>(5)</div>
+                </div>
+                <div class="shop_c1">
+                    <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                            style="text-decoration: none; color: green;">Strawbery</a></div>
+                    <div>(2)</div>
+                </div>
+                <div class="shop_c1">
+                    <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                            style="text-decoration: none; color: green;">Banana</a></div>
+                    <div>(8)</div>
+                </div>
+                <div class="shop_c1">
+                    <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                            style="text-decoration: none; color: green;">Pumpkin</a></div>
+                    <div>(5)</div>
+                </div>
+                <div class="roll">
+                    <label for="roll">Price</label><br>
+                    <input type="range" id="roll" min="0" max="100" style="width:90%"><br>
+                </div>
+                <div>
+                    <div style="font-size: 30px;padding-top:20px;">Featured products</div>
+                    <div class="tablet_shop_orang">
+                        <div class="tablet_shop_image"><img class="tablet_circle_img"
+                                src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-1.jpg"
+                                alt=""></div>
+                        <div class="block12_content">
+                            <div class="organic_tomato"><span style="font-size: 18px;">Organic Orange</span></div>
+                            <div class="shop_stars"><span style="color:orange;"><ion-icon name="star"></ion-icon><ion-icon
+                                        name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                        name="star"></ion-icon></span><span style="color:rgb(117, 124, 125)"><ion-icon
+                                        name="star"></span></ion-icon></div>
+                            <div class="cost"><span style="font-size: 20px;">3.12$</span></div>
+                        </div>
+                    </div>
+                    <div class="tablet_shop_orang">
+                        <div class="tablet_shop_image"><img class="tablet_circle_img"
+                                src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/featur-1.jpg" alt="">
+                        </div>
+                        <div class="block12_content">
+                            <div class="organic_tomato"><span style="font-size: 18px;">Organic Apples</span></div>
+                            <div class="shop_stars"><span style="color:orange;"><ion-icon name="star"></ion-icon><ion-icon
+                                        name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                        name="star"></ion-icon></span><span style="color:rgb(117, 124, 125)"><ion-icon
+                                        name="star"></span></ion-icon></div>
+                            <div class="cost"><span style="font-size: 20px;">3.12$</span></div>
+                        </div>
+                    </div>
+                    <div class="tablet_shop_orang">
+                        <div class="tablet_shop_image"><img class="tablet_circle_img"
+                                src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/featur-2.jpg" alt="">
+                        </div>
+                        <div class="block12_content">
+                            <div class="organic_tomato"><span style="font-size: 18px;">Organic Strawbery</span></div>
+                            <div class="shop_stars"><span style="color:orange;"><ion-icon name="star"></ion-icon><ion-icon
+                                        name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                        name="star"></ion-icon></span><span style="color:rgb(117, 124, 125)"><ion-icon
+                                        name="star"></span></ion-icon></div>
+                            <div class="cost"><span style="font-size: 20px;">3.12$</span></div>
+                        </div>
+                    </div>
+                </div>
+                <button style="border-radius: 20px;margin-left:10px; width:80%; height:60px; background-color: #81C408; color: white;margin-top:20px">View
+                    more</button>
+                <div class="mobile_photo_shop">
+                    <img class="mobile_image_shop"
+                        src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/banner-fruits.jpg" alt="">
+                </div>
+        </div>
+
+        <div class="tablet_block8" style="padding-top:20px;">
+            <div class="Name"><h3><span style="font-size: 40px;">Related Products</span></h3></div>
+            <div style="display: flex; flex-direction: row; padding:30px 15px 10px 10px; gap:10px">
+                <div class="buttons_1"><button class="bn"><ion-icon class="arrow" name="arrow-forward-outline"></ion-icon></button></div>
+                <div class="buttons_1"><button class="bn"><ion-icon class="arrow" name="arrow-back-outline"></ion-icon></button></div>
+            </div>
+        </div>
+
+
+        <div class="tablet_block9" >
+            
+            <div class="tablet_apples">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-6.jpg" alt="Apples">
+                </div>
+                <center><div class="heading_apples"><h5> Apple</h5></div></center>
+                <div class="para_apples"><p>Apples are nutritious. Apples may be good for weight loss. Apples may be good for your heart. As part of a healthy diet.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+        </div>
+
+        <footer class="tablet_footer">
+                <div class="ff11">
+                    <a href=""  style="text-decoration: none; color:#36806a;font-size: 45px;">Fruitables</a>
+                    <a href=""  style="color:orange;font-size: 30px;;text-decoration: none"> Fresh products</a>
+                </div>
+                <div class="ff12">
+                    <input class="search1" type="text" placeholder="Your Email" style="height:50px; width:340px; margin-top:30px; margin-left:10px; border-color: orange; border-radius: 40px;">
+                    <input class="btn" type="submit"> </span>
+                </div>
+                <div class="ff13">
+                    <span style="color:orange; font-size: 50px;"><ion-icon name="logo-facebook"></ion-icon></span>
+                    <span style="color:orange; font-size: 50px;"><ion-icon name="logo-twitter"></ion-icon></span>
+                    <span style="color:orange; font-size: 50px;"><ion-icon name="logo-instagram"></ion-icon></span>
+                    <span style="color:orange; font-size: 50px;"><ion-icon name="logo-linkedin"></ion-icon></span>
+                    
+                </div>
+                
+                <div class="ff21">
+                    <div style="padding-top:15px;;"><span style="color:white;font-size: 100px; font-family: 'Times New Roman', Times, serif;"><h6 style="font-size: 30px;">Why People Like us!</h6></span></div>
+                    <div style="padding-top:15px;padding-left: 10px;"><span style="color:rgb(172, 169, 169);font-size: 15px; font-family: Open Sans, sans-serif;"><p style="line-height: 1.8;">typesetting, remaining essentially unchanged. It was popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p></span></div>
+                    <div style="padding-top:15px;padding-left: 10px;" class="buttons_1"><button class="bn">Read More</button></div>
+
+                </div>
+                <div class="ff22">
+                    <div style="padding-top:10px;padding-left: 40px;"><span style="color:white;font-size: 40px; font-family: 'Times New Roman', Times, serif;"><h6 style="font-size: 30px;">Shop Info</h6></span></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">About us</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Contact us</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Privacy Policy</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Terms & Conditions</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Return Policy</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">FAQs & Help</a></div>
+                </div>
+                <div class="ff23">
+                    <div style="padding-top:10px;padding-left: 40px;"><span style="color:white;font-size: 40px; font-family: 'Times New Roman', Times, serif;"><h6 style="font-size: 30px;">Account</h6></span></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">My Account</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Shop Details</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Shoping Cart</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Wishlist</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Order History</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">International Orders</a></div>
+                </div>
+                <div class="ff24">
+                    <div style="padding-top:10px;padding-left: 87px;"><span style="color:white;font-size: 40px; font-family: 'Times New Roman', Times, serif;"><h6 style="font-size: 30px;">Contact</h6></span></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Address: 1429 Netus Rd, NY 48247</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Email: Example@gmail.com</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Phone: +0123 4567 8910</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Payment Accepted</a></div>
+                    <div style="padding-top:10px;padding-left: 45px;"><img src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/payment.png" alt=""></div>
+                </div>
+                <div class="ff31">
+                    <div style="padding-top:30px;"><a href="" style="text-decoration: none; color:greenyellow;font-size: 18px; font-family: Open Sans, sans-serifpx;">ORGANIC_FOOD</a> &nbsp;&nbsp; <span style="color:white; font-size: 18px;">All right reserved.</span></div>
+                </div>
+                <div class="ff32">
+                    <div style="padding-top:30px; padding-left:100px"><span style="color:white; font-size: 18px;">Designed By </span><a href="" style="text-decoration: none; color:greenyellow;font-size: 18px; font-family: Open Sans, sans-serifpx;">KALYANI_PEBBULI</a> </div>
+                </div>
+        </footer>
+
+
+
+    </div>
+
+
+
+    <div class="mobile">
+        <nav class="navbar bg-body-tertiary fixed-top" style="height:100px ;padding-right:10px;padding-left:10px;" >
+                <div class="container-fluid">
+                    <a class="navbar-brand" style="color:#81C408;font-size:40px;" href="#">Fruitables</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" style="color: #81C408;">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./HTML_CSS_PRO.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shop_detail.html">Shop_Detail</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                            <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
+                            <li><a class="dropdown-item" href="./testimonial.html">Testimonial</a></li>
+                            <li><a class="dropdown-item" href="./404_page_not_found.html">404 pages</a></li>
+                            
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                        </ul>
+                        
+                    </div>
+                    </div>
+                </div>
+        </nav>
+
+        <div class="background_shop" style="margin-top:100px;">
+            <div style="color:white; font-size: 40px;text-align:center;padding-top:60px">Shop</div>
+            <div style="text-align:center">
+                <a href="" class="shop_anchortag">Home</a>&nbsp;&nbsp;<span style="color: white;">/</span>&nbsp;&nbsp;
+                <a href="" class="shop_anchortag">Pages</a>&nbsp;&nbsp;<span style="color: white;">/</span>&nbsp;&nbsp;
+                <a href="" class="shop_anchortag" style="color:white">Shop</a>
+            </div>
+        </div>
+
+        <div class="mobile_shop_details_img" style="margin:40px; margin-left:100px;margin-bottom:5px;">
+            <img class="shop_details_img_det" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/single-item.jpg" alt="Vegetable" style="object-fit: contain;">
+        </div>
+
+        <div class="mobile_content" style="margin-left:40px;margin-right:0px;">
+            <div style=" padding-left:10px;padding-top:2px"><span style="font-size: 45px;padding-top:10px;"><h5 style="font-size: 45px;">Brocoli</h5></span></div>
+            <div style="padding-top:10px; padding-left:10px;"><span style="font-size: 20px;"><p>Category: Vegetables</p></span></div>
+            <div style="padding-top:10px; padding-left:10px;"><span style="font-size: 30px;"><p>3,35 $</p></div>
+            <div style="padding-top: 10px;font-size: 20px; padding-left:10px;"><span style="color:orange"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></span><ion-icon name="star-outline"></ion-icon></div>
+            <div style="padding-top:25px;font-size:18px;padding-left: 10px;"><p>The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.</p></div>
+            <div style="padding-top:10px;font-size:18px;padding-left: 10px;"><p>Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish</p></div>
+            <button style="margin-top: 20px;margin-left:10px; background-color:greenyellow">Add to Cart</button>
+        </div>
+
+        <div class="blk2">
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./shop_details_description.html"  target="kalyaniii" style="font-size: 25px; text-decoration: none;">Description</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="./shop_details_reviews.html" target="kalyaniii"  style="font-size: 25px; text-decoration: none;">Reviews</a>
+                    
+                </div>
+                <span style="color:black"><hr></span>
+                <div>
+                    <iframe src="./shop_details_description.html" name="kalyaniii" frameborder="0" class="shop_details_iframe"></iframe>
+                </div>
+        </div>
+
+        <div class="blk3" style="padding-left:10px;">
+                <span style="font-size: 30px;padding-top: 20px;"><h4>Leave a Reply</h4></span>
+                <div class="inputfield-row" style="padding-top:20px;">
+                    <input type="text" placeholder="Your Name*" style="width: 48%; height: 50px; border-radius: 5px; border: 1px solid greenyellow;">
+                    <input type="text" placeholder="Your Email*" style="width: 48%; height: 50px; border-radius: 5px; border:1px solid greenyellow;">
+                </div>
+                <div style="margin-top:30px">
+                    <textarea placeholder="Your Review*" name="" id="" style="height: 100px; width:90%; border: 1px solid greenyellow;"></textarea>
+                </div>
+                <br>
+                <div class="plate_review">
+                    <div><span style="font-size: 25px;"><p>Please rate:</span><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></p></div>
+                    <div><button style="margin-top: 20px;margin-right: 30px;margin-left:10px; background-color:greenyellow">Post Comment</button></div>
+                </div>
+        </div>
+
+        <div class="tablet_b1">
+                <div style="font-size: 40px;">Categories</div>
+                <div class="shop_c1">
+                    <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                            style="text-decoration: none; color: green;">Apples</a></div>
+                    <div>(3)</div>
+                </div>
+                <div class="shop_c1">
+                    <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                            style="text-decoration: none; color: green;">Orange</a></div>
+                    <div>(5)</div>
+                </div>
+                <div class="shop_c1">
+                    <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                            style="text-decoration: none; color: green;">Strawbery</a></div>
+                    <div>(2)</div>
+                </div>
+                <div class="shop_c1">
+                    <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                            style="text-decoration: none; color: green;">Banana</a></div>
+                    <div>(8)</div>
+                </div>
+                <div class="shop_c1">
+                    <div class="green"><ion-icon name="logo-apple"></ion-icon><a href=""
+                            style="text-decoration: none; color: green;">Pumpkin</a></div>
+                    <div>(5)</div>
+                </div>
+                <div class="roll">
+                    <label for="roll">Price</label><br>
+                    <input type="range" id="roll" min="0" max="100" style="width:90%"><br>
+                </div>
+                <div>
+                    <div style="font-size: 30px;padding-top:20px;">Featured products</div>
+                    <div class="tablet_shop_orang">
+                        <div class="tablet_shop_image"><img class="tablet_circle_img"
+                                src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-1.jpg"
+                                alt=""></div>
+                        <div class="block12_content">
+                            <div class="organic_tomato"><span style="font-size: 18px;">Organic Orange</span></div>
+                            <div class="shop_stars"><span style="color:orange;"><ion-icon name="star"></ion-icon><ion-icon
+                                        name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                        name="star"></ion-icon></span><span style="color:rgb(117, 124, 125)"><ion-icon
+                                        name="star"></span></ion-icon></div>
+                            <div class="cost"><span style="font-size: 20px;">3.12$</span></div>
+                        </div>
+                    </div>
+                    <div class="tablet_shop_orang">
+                        <div class="tablet_shop_image"><img class="tablet_circle_img"
+                                src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/featur-1.jpg" alt="">
+                        </div>
+                        <div class="block12_content">
+                            <div class="organic_tomato"><span style="font-size: 18px;">Organic Apples</span></div>
+                            <div class="shop_stars"><span style="color:orange;"><ion-icon name="star"></ion-icon><ion-icon
+                                        name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                        name="star"></ion-icon></span><span style="color:rgb(117, 124, 125)"><ion-icon
+                                        name="star"></span></ion-icon></div>
+                            <div class="cost"><span style="font-size: 20px;">3.12$</span></div>
+                        </div>
+                    </div>
+                    <div class="tablet_shop_orang">
+                        <div class="tablet_shop_image"><img class="tablet_circle_img"
+                                src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/featur-2.jpg" alt="">
+                        </div>
+                        <div class="block12_content">
+                            <div class="organic_tomato"><span style="font-size: 18px;">Organic Strawbery</span></div>
+                            <div class="shop_stars"><span style="color:orange;"><ion-icon name="star"></ion-icon><ion-icon
+                                        name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                        name="star"></ion-icon></span><span style="color:rgb(117, 124, 125)"><ion-icon
+                                        name="star"></span></ion-icon></div>
+                            <div class="cost"><span style="font-size: 20px;">3.12$</span></div>
+                        </div>
+                    </div>
+                </div>
+                <button style="border-radius: 20px;margin-left:10px; width:80%; height:60px; background-color: #81C408; color: white;margin-top:20px">View
+                    more</button>
+                <div class="mobile_photo_shop">
+                    <img class="mobile_image_shop"
+                        src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/banner-fruits.jpg" alt="">
+                </div>
+        </div>
+
+        <div class="mobile_block8">
+            <div class="Name" style="padding-top:30px;"><h3><span style="font-size: 30px;">Related Products</span></h3></div>
+            <div style="display: flex; flex-direction: row; padding:30px 15px 10px 10px; gap:10px">
+                <div class="buttons_1"><button class="bn"><ion-icon class="arrow" name="arrow-forward-outline"></ion-icon></button></div>
+                <div class="buttons_1"><button class="bn"><ion-icon class="arrow" name="arrow-back-outline"></ion-icon></button></div>
+            </div>
+        </div>
+
+        <div class="mobile_block9" style="margin-top:10px;margin-left:30px;margin-bottom:40px;">
+            
+            <div class="mobile_apples" >
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-6.jpg" alt="Apples">
+                </div>
+                <center><div class="heading_apples"><h5> Apple</h5></div></center>
+                <div class="para_apples"><p>Apples are nutritious. Apples may be good for weight loss. Apples may be good for your heart. As part of a healthy diet.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+        </div>
+
+        <footer class="mobile_footer">
+                <div class="ff11">
+                    <a href=""  style="text-decoration: none; color:#36806a;font-size: 45px;">Fruitables</a>
+                    <a href=""  style="color:orange;font-size: 30px;text-decoration: none"> Fresh products</a>
+                </div>
+                <div class="ff12">
+                    <input class="search1" type="text" placeholder="Your Email" style="height:50px; width:240px; margin-top:30px; margin-left:10px; border-color: orange; border-radius: 40px;">
+                    <input class="mobile_btn1" type="submit"> </span>
+                </div>
+                <div class="ff13">
+                    <span style="color:orange; font-size: 50px;"><ion-icon name="logo-facebook"></ion-icon></span>
+                    <span style="color:orange; font-size: 50px;"><ion-icon name="logo-twitter"></ion-icon></span>
+                    <span style="color:orange; font-size: 50px;"><ion-icon name="logo-instagram"></ion-icon></span>
+                    <span style="color:orange; font-size: 50px;"><ion-icon name="logo-linkedin"></ion-icon></span>
+                    
+                </div>
+                
+                <div class="ff21">
+                    <div style="padding-top:15px;"><span style="color:white;font-size: 100px; font-family: 'Times New Roman', Times, serif;"><h6 style="font-size: 30px;">Why People Like us!</h6></span></div>
+                    <div style="padding-top:15px;"><span style="color:rgb(172, 169, 169);font-size: 15px; font-family: Open Sans, sans-serif;"><p style="line-height: 1.8;">typesetting, remaining essentially unchanged. It was popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p></span></div>
+                    <div style="padding-top:15px;" class="buttons_1"><button class="bn">Read More</button></div>
+
+                </div>
+                <div class="ff22">
+                    <div style="padding-top:10px;"><span style="color:white;font-size: 40px; font-family: 'Times New Roman', Times, serif;"><h6 style="font-size: 30px;">Shop Info</h6></span></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">About us</a></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Contact us</a></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Privacy Policy</a></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Terms & Conditions</a></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Return Policy</a></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">FAQs & Help</a></div>
+                </div>
+                <div class="ff23">
+                    <div style="padding-top:10px;"><span style="color:white;font-size: 40px; font-family: 'Times New Roman', Times, serif;"><h6 style="font-size: 30px;">Account</h6></span></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">My Account</a></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Shop Details</a></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Shoping Cart</a></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Wishlist</a></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Order History</a></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">International Orders</a></div>
+                </div>
+                <div class="ff24">
+                    <div style="padding-top:10px;"><span style="color:white;font-size: 40px; font-family: 'Times New Roman', Times, serif;"><h6 style="font-size: 30px;">Contact</h6></span></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Address: 1429 Netus Rd, NY 48247</a></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Email: Example@gmail.com</a></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Phone: +0123 4567 8910</a></div>
+                    <div style="padding-top:10px;"><a href="" style="text-decoration: none; color:rgb(172, 169, 169);font-size: 20px; font-family: Open Sans, sans-serifpx;">Payment Accepted</a></div>
+                    <div style="padding-top:10px;"><img src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/payment.png" alt=""></div>
+                </div>
+                <div class="ff31">
+                    <div style="padding-top:30px; text-decoration: none; color:greenyellow;font-size: 18px; font-family: Open Sans, sans-serifpx;">ORGANIC_FOOD</a> &nbsp;&nbsp; <span style="color:white; font-size: 18px;">All right reserved.</span></div>
+                </div>
+                <div class="ff32">
+                    <div style="padding-top:30px;"><span style="color:white; font-size: 18px;">Designed By </span><a href="" style="text-decoration: none; color:greenyellow;font-size: 18px; font-family: Open Sans, sans-serifpx;">KALYANI_PEBBULI</a> </div>
+                </div>
+        </footer>
+
+
+
+    </div>
+</body>
+</html>

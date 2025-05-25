@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <style>
+        .mobile,.tablet,.desktop{
+            display:none
+        }
+        @media screen and (min-width:0px) and (max-width:767px){
+            .mobile{
+                display:block;
+            }
+            nav{
+            position: fixed;
+            }
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%2381C408' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:1023px){
+            .tablet{
+                display:block;
+            }
+            nav{
+            position: fixed;
+            }
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%2381C408' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        
+            }
+        }
+        @media screen and (min-width:1024px) {
+            .desktop{
+                display:block;
+            }
+        }
+
+        .block61{
+            height:500px;
+            width:90%;
+            /* background-color: rgb(200, 0, 255); */
+            display:grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-rows: 470px;
+            grid-template-areas:" rasp apric appl grap";
+            /* justify-content: space-around; */
+             margin: 40px auto;
+            /* margin:0px 60px 30px 150px auto; */
+            gap:50px;
+            /* margin-left:10px; */
+            margin-left:100px;
+            margin-right:100px;
+        }
+        /* .apples, .Grapes {
+            flex: 1;             
+            height: 450px;
+            width: 50%;
+            width:100%;     
+            border: 1px solid #ccc;  
+            margin: 40px;
+            box-sizing: border-box;  
+            border: 2px solid orange;
+        } */
+
+                .mobile_block6{
+            height:2050px;
+            width:50%;
+            /* background-color: rgb(200, 0, 255); */
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 470px 470px 470px 470px ;
+            grid-template-areas:"appl"  "grap" "rasp" "apric";
+            /* justify-content: space-around; */
+             margin: 40px auto;
+            /* margin:0px 60px 30px 150px auto; */
+            gap:50px;
+            /* margin-left:10px; */
+            margin-left:60px;
+            margin-right:100px;
+        }
+
+        .tablet_block6{
+            height:1000px;
+            width:70%;
+            /* background-color: rgb(200, 0, 255); */
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 470px 470px  ;
+            grid-template-areas:"appl grap" "rasp apric";
+            justify-content: space-around;
+             margin: 40px auto;
+            /* margin:0px 60px 30px 150px auto; */
+            gap:50px;
+            /* margin-left:10px; */
+            margin-left:60px;
+            margin-right:100px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="desktop">
+            <div class="block61" id="c2">
+                        <div class="Raspberries">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-2.jpg" alt="Raspberries">
+                </div>
+                <center><div class="heading_apples"><h5> Raspberries</h5></div></center>
+                <div class="para_apples"><p>Raspberries are nutritious. Raspberries may be good for weight loss. Raspberries may be good for your heart.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+            <div class="Apricots">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-4.jpg" alt="Apricots">
+                </div>
+                <center><div class="heading_apples"><h5> Apricots</h5></div></center>
+                <div class="para_apples"><p>Apricots are nutritious. Apricots may be good for weight loss. Apricots may be good for your heart.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+
+            <div class="apples">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-6.jpg" alt="Apples">
+                </div>
+                <center><div class="heading_apples"><h5> Apple</h5></div></center>
+                <div class="para_apples"><p>Apples are nutritious. Apples may be good for weight loss. Apples may be good for your heart. As part of a healthy diet.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+            <div class="Grapes">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-5.jpg" alt="Grapes">
+                </div>
+                <center><div class="heading_apples"><h5> Grapes</h5></div></center>
+                <div class="para_apples"><p>Grapes are nutritious. Grapes may be good for weight loss. Grapes may be good for your heart.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+    </div>
+
+    </div>
+    <div class="tablet">
+                    <div class="Raspberries">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-2.jpg" alt="Raspberries">
+                </div>
+                <center><div class="heading_apples"><h5> Raspberries</h5></div></center>
+                <div class="para_apples"><p>Raspberries are nutritious. Raspberries may be good for weight loss. Raspberries may be good for your heart.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+            <div class="Apricots">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-4.jpg" alt="Apricots">
+                </div>
+                <center><div class="heading_apples"><h5> Apricots</h5></div></center>
+                <div class="para_apples"><p>Apricots are nutritious. Apricots may be good for weight loss. Apricots may be good for your heart.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+                        <div class="apples">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-6.jpg" alt="Apples">
+                </div>
+                <center><div class="heading_apples"><h5> Apple</h5></div></center>
+                <div class="para_apples"><p>Apples are nutritious. Apples may be good for weight loss. Apples may be good for your heart. As part of a healthy diet.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+            <div class="Grapes">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-5.jpg" alt="Grapes">
+                </div>
+                <center><div class="heading_apples"><h5> Grapes</h5></div></center>
+                <div class="para_apples"><p>Grapes are nutritious. Grapes may be good for weight loss. Grapes may be good for your heart.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+
+
+    </div>
+    <div class="mobile">
+                            <div class="Raspberries">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-2.jpg" alt="Raspberries">
+                </div>
+                <center><div class="heading_apples"><h5> Raspberries</h5></div></center>
+                <div class="para_apples"><p>Raspberries are nutritious. Raspberries may be good for weight loss. Raspberries may be good for your heart.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+            <div class="Apricots">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-4.jpg" alt="Apricots">
+                </div>
+                <center><div class="heading_apples"><h5> Apricots</h5></div></center>
+                <div class="para_apples"><p>Apricots are nutritious. Apricots may be good for weight loss. Apricots may be good for your heart.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+                        <div class="apples">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-6.jpg" alt="Apples">
+                </div>
+                <center><div class="heading_apples"><h5> Apple</h5></div></center>
+                <div class="para_apples"><p>Apples are nutritious. Apples may be good for weight loss. Apples may be good for your heart. As part of a healthy diet.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+            <div class="Grapes">
+                <div class="blk6_img">
+                    <img class="blk6_image_fru" src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/best-product-5.jpg" alt="Grapes">
+                </div>
+                <center><div class="heading_apples"><h5> Grapes</h5></div></center>
+                <div class="para_apples"><p>Grapes are nutritious. Grapes may be good for weight loss. Grapes may be good for your heart.</p></div>
+                <div class="cost">$4.99 / kg</div>
+                <div><button style="margin-left:10px;"><span style="color:#81C408;"><ion-icon name="bag-handle-outline"></ion-icon>&nbsp;Add to Cart</span></button></div>
+            </div>
+
+
+    </div>
+</body>
+</html>
